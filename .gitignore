@@ -6,3 +6,4 @@ includes/libft/libft.a
 objs
 objs/*
 a.out
+msh
