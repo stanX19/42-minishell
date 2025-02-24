@@ -1,0 +1,8 @@
+.vscode
+.vscode/*
+includes/libft/objs
+includes/libft/objs/*
+includes/libft/libft.a
+objs
+objs/*
+a.out
