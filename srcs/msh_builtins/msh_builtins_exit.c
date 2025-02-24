@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   msh_builtins_exit.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myeow <myeow@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: shatan <shatan@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 16:37:15 by myeow             #+#    #+#             */
 /*   Updated: 2024/10/25 18:11:44 by myeow            ###   ########.fr       */
