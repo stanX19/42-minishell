@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	msh_perror(char *s1, char *s2, char *msg);
+# include "msh_perror.h"
 
 /*
  * Terminates the entire shell with an error message.

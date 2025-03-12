@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "msh_env.h"
+#include <stdio.h>
 
 static char	*find_equals(char *env_str)
 {

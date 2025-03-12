@@ -13,11 +13,11 @@
 #include <stdlib.h>
 #include "ft_lst_utils.h"
 
-t_list	*ft_lstnew(void *content)
+t_node	*ft_lstnew(void *content)
 {
-	t_list	*node;
+	t_node	*node;
 
-	node = (t_list *) malloc(sizeof(t_list));
+	node = (t_node *) malloc(sizeof(t_node));
 	if (!node)
 		return (0);
 	node->content = content;

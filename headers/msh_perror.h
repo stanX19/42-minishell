@@ -14,6 +14,7 @@
 # define MSH_PERROR_H
 
 # include <errno.h>
+# include <stdlib.h>
 
 # define ERROR -1
 

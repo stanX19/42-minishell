@@ -63,13 +63,17 @@ fclean:	clean
 re: fclean $(NAME)
 
 push:
+	make -C $(LIBFT_DIR) push
 	@echo -n "Commit name: "; read name; make fclean;\
 	git add .; git commit -m "$$name"; git push;
 
-$(LIBFT): $(shell find $(LIBFT_DIR) -name "*.c")
+$(LIBFT): $(LIBFT_DIR) $(shell find $(LIBFT_DIR) -name "*.c")
 	make -C $(LIBFT_DIR) all
 
-init_libft: $(LIBFT_DIR)
-
+$(LIBFT_DIR):
+	touch .gitmodules
+	git submodule add --force git@github.com:stanX19/libft.git $(LIBFT_DIR)
+	git config -f .gitmodules submodule.$(LIBFT_DIR).branch main
+	git submodule update --init --recursive --remote
 
 .PHONY: all clean fclean re bonus push
